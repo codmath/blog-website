@@ -1,0 +1,12 @@
+<%-include("header");-%>
+<h1>Home</h1>
+<p><%= para_1%></p>
+<% console.log(posts) %>
+<% for(var i=0; i<posts.length; i++){ %>
+<h1><%=posts[i].title %> </h1>
+<p><%=posts[i].contents.substring(0, 50)+"...."%>
+   
+</p>
+
+<% } %>
+<%-include("footer");-%>;
